@@ -1,0 +1,663 @@
+{
+  "services": [
+    {
+      "id": "6wvaygtpmnkba7m",
+      "slug": "wash-fold",
+      "name": "Wash & Fold"
+    },
+    {
+      "id": "hnqy2x3j73qguep",
+      "slug": "wash-iron",
+      "name": "Wash & Iron"
+    },
+    {
+      "id": "mqanz0djh8jdaud",
+      "slug": "dry-cleaning",
+      "name": "Dry Cleaning"
+    },
+    {
+      "id": "p5hb3udsfh12zvf",
+      "slug": "steam-ironing",
+      "name": "Steam Ironing"
+    }
+  ],
+  "items": [
+    {
+      "id": "ikakvjuub49fcyw",
+      "name": "DRY CLEANING - ADULTS BLAZER",
+      "price": 200,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "iw9otc740fu343t",
+      "name": "DRY CLEANING - BANARAS,BANDINI SAREE",
+      "price": 330,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "pm42ii8863l2g43",
+      "name": "DRY CLEANING - CHUNNI/DUPATTA",
+      "price": 70,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "4tp0xjvwqdgy3wc",
+      "name": "DRY CLEANING - COLOUR BED SHEET DOUBLE COT",
+      "price": 300,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "bjb4om50bm1ofsw",
+      "name": "DRY CLEANING - COLOUR BED SHEET SINGLE COT",
+      "price": 200,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "wsesegp5iz95y23",
+      "name": "DRY CLEANING - COLOUR PANT",
+      "price": 180,
+      "unit": "PER PIECE",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "o26aw0rw4d57lqw",
+      "name": "DRY CLEANING - COLOUR SHIRT",
+      "price": 200,
+      "unit": "PER PIECE",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "3thenan7xho80gp",
+      "name": "DRY CLEANING - COMFORTNER",
+      "price": 450,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "haoqqonz56boxlk",
+      "name": "DRY CLEANING - COTTON PANCHA",
+      "price": 250,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "qj9z2w8885alwbz",
+      "name": "DRY CLEANING - EMBRIODERY BLOUSE",
+      "price": 60,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "mgkzzpklx2pgynu",
+      "name": "DRY CLEANING - EMBRIODERY SAREE",
+      "price": 350,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "8j305bc1bcehrm8",
+      "name": "DRY CLEANING - HALF BLAZER",
+      "price": 250,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "y2q6tjhotrx1lpb",
+      "name": "DRY CLEANING - HOODIE",
+      "price": 300,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "e3kntvvyh4q38v1",
+      "name": "DRY CLEANING - JURKIN",
+      "price": 350,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "oq9qt6cnduz50pl",
+      "name": "DRY CLEANING - KANDUVA",
+      "price": 150,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "i99kuq4eu4tw5of",
+      "name": "DRY CLEANING - KIDS BLAZER",
+      "price": 200,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "cegqmy2unm1plxp",
+      "name": "DRY CLEANING - KIDS DRESS",
+      "price": 150,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "0ee2e93sb2ealjj",
+      "name": "DRY CLEANING - KIDS FROCK",
+      "price": 200,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "fkkmj88g7nj06ny",
+      "name": "DRY CLEANING - KURTI COLOUR",
+      "price": 280,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "flnhhrqy1t1m8v1",
+      "name": "DRY CLEANING - KURTI EMBRIODERY",
+      "price": 380,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "wbsktyx5ljs74wn",
+      "name": "DRY CLEANING - KURTI WHITE",
+      "price": 300,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "1yi6ui13ros49qu",
+      "name": "DRY CLEANING - LEHANGA MORMAL",
+      "price": 280,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "of9cmles81sw8f1",
+      "name": "DRY CLEANING - LEHANGA WORK",
+      "price": 310,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "ys3zfkga21tys0d",
+      "name": "DRY CLEANING - LONG FROCK",
+      "price": 300,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "tdgnm14krjab2pl",
+      "name": "DRY CLEANING - LONG FROCK WORK",
+      "price": 360,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "z2crg40plxqk78d",
+      "name": "DRY CLEANING - NORMAL BLOUSE",
+      "price": 40,
+      "unit": "PER PIECE",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "s1sdd4d9lzxies4",
+      "name": "DRY CLEANING - NORMAL SAREE",
+      "price": 250,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "8l0p6gk84h6uvt6",
+      "name": "DRY CLEANING - PATTU DHOTTI",
+      "price": 250,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "rna9bdsyv1e3g4n",
+      "name": "DRY CLEANING - PATTU LANGA",
+      "price": 380,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "ilwv9daj387hlja",
+      "name": "DRY CLEANING - PATTU PANCHA",
+      "price": 300,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "a7qenjb7frmqgjw",
+      "name": "DRY CLEANING - PATTU SAREE",
+      "price": 280,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "89rsb81g2av0k69",
+      "name": "DRY CLEANING - PILLOW COVER",
+      "price": 80,
+      "unit": "PER PAIR",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "vkpi0lojuim9yvj",
+      "name": "DRY CLEANING - SAREE POLISHING",
+      "price": 210,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "mdz85bm5aqi44r4",
+      "name": "DRY CLEANING - SAREE STARCH+ROLLING",
+      "price": 90,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "9mfuvfppwftyw3s",
+      "name": "DRY CLEANING - TOWEL",
+      "price": 110,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "w89apk3m2h6evb3",
+      "name": "DRY CLEANING - WHITE BED SHEET DOUBLE COT",
+      "price": 350,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "qldb7a977w74m69",
+      "name": "DRY CLEANING - WHITE BED SHEET SINGLE COT",
+      "price": 250,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "mwo0g4lflyaeqa7",
+      "name": "DRY CLEANING - WHITE PANT",
+      "price": 220,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "oxh0zk6tfybizcv",
+      "name": "DRY CLEANING - WHITE SHIRT",
+      "price": 250,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "kxbjqb2mqw726qr",
+      "name": "SAREE ROLLING",
+      "price": 70,
+      "unit": "PER NO",
+      "serviceTypeId": "mqanz0djh8jdaud"
+    },
+    {
+      "id": "0zwxfytu0c6ouyf",
+      "name": "STEAM IRONING - BEDSHEET",
+      "price": 60,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "b70mb61nudx5ioe",
+      "name": "STEAM IRONING - BEDSHEET KING SIZE",
+      "price": 80,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "8u8hgeu717vrg22",
+      "name": "STEAM IRONING - BENARAS/BANDINI SAREE",
+      "price": 100,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "mpxunpbf5i5i6nt",
+      "name": "STEAM IRONING - BLEZER",
+      "price": 70,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "23z1dfmhjh9815g",
+      "name": "STEAM IRONING - BLOUSE",
+      "price": 20,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "h147q55olyxmluo",
+      "name": "STEAM IRONING - CHIFFON SAREE",
+      "price": 50,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "sc05nni661bjm4q",
+      "name": "STEAM IRONING - CHUNNI DUPATTA",
+      "price": 30,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "ljsyj67wuangp92",
+      "name": "STEAM IRONING - COTTON LEHANGA FROCK",
+      "price": 60,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "egeqt2y37jfsxam",
+      "name": "STEAM IRONING - COTTON SAREE",
+      "price": 60,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "u9yzcsn8mopt9ja",
+      "name": "STEAM IRONING - COTTON SHIRT",
+      "price": 40,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "a4p0dg2ztjaiycq",
+      "name": "STEAM IRONING - DHOTTI",
+      "price": 40,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "teka87vntk46kmi",
+      "name": "STEAM IRONING - EMBRIODERY SAREE",
+      "price": 80,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "l29qppcv1rhywy1",
+      "name": "STEAM IRONING - FROCK",
+      "price": 40,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "p0weio9xihtbq58",
+      "name": "STEAM IRONING - FROCK+STARCH",
+      "price": 60,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "52nu0bus3hzl6tw",
+      "name": "STEAM IRONING - HOODIE BIG",
+      "price": 70,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "dlk9hxhn749lk2r",
+      "name": "STEAM IRONING - HOODIE SMALL",
+      "price": 50,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "9vofle8xwg7iqg7",
+      "name": "STEAM IRONING - JEANS",
+      "price": 40,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "s5qj2svnd9lgw3j",
+      "name": "STEAM IRONING - KANDUVA",
+      "price": 30,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "m33bg7wito7ts6o",
+      "name": "STEAM IRONING - KURTHI PANT",
+      "price": 30,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "rbjj03z3sb1dibn",
+      "name": "STEAM IRONING - KURTHI SHIRT",
+      "price": 40,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "i77ndm7di86gpxy",
+      "name": "STEAM IRONING - PANCHALU",
+      "price": 50,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "5sy7gauhfhxg30t",
+      "name": "STEAM IRONING - PANT'S/TROUSERS",
+      "price": 15,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "lsjw1583tfandi7",
+      "name": "STEAM IRONING - PANTS MEN",
+      "price": 15,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "uncatsrhg2kp9ts",
+      "name": "STEAM IRONING - PATTU LEHANGA FROCK",
+      "price": 80,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "ebamdm5l9frv84c",
+      "name": "STEAM IRONING - PATTU SAREE",
+      "price": 70,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "q28kx8wopl44ad2",
+      "name": "STEAM IRONING - PATTU/BANDINI/EMBRIODERY BLOUSE",
+      "price": 40,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "w3je6ypxc8wmc2e",
+      "name": "STEAM IRONING - PILLOW COVER",
+      "price": 30,
+      "unit": "PER PAIR",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "milie17qqzkv3bm",
+      "name": "STEAM IRONING - SCHOOL UNIFORM (48 CM)",
+      "price": 25,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "q385pvqkyqainh9",
+      "name": "STEAM IRONING - SHIRT",
+      "price": 15,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "lmk286eoafec7z6",
+      "name": "STEAM IRONING - SWEATER BIG",
+      "price": 60,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "o9w721yq3hoxjqx",
+      "name": "STEAM IRONING - SWEATER SMALL",
+      "price": 40,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "1i9yq9627chi09e",
+      "name": "STEAM IRONING - TOP",
+      "price": 15,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "pepzxm71v9wmbfj",
+      "name": "STEAM IRONING - TOP+STARCH",
+      "price": 50,
+      "unit": "PER PIECE",
+      "serviceTypeId": "p5hb3udsfh12zvf"
+    },
+    {
+      "id": "5gf5w0qik0g7lwm",
+      "name": "WASH & FOLD BEDSHEET - KING SIZE",
+      "price": 500,
+      "unit": "PER PIECE",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    },
+    {
+      "id": "gi8i1xvltt1x72h",
+      "name": "WASH & FOLD BEDSHEET - QUEEN SIZE",
+      "price": 450,
+      "unit": "PER PIECE",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    },
+    {
+      "id": "egs0rwv06lpa1qk",
+      "name": "WASH & FOLD MEN",
+      "price": 250,
+      "unit": "PER KG",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    },
+    {
+      "id": "0mkth83e59g0o0t",
+      "name": "WASH & FOLD MEN - WHITE",
+      "price": 300,
+      "unit": "PER KG",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    },
+    {
+      "id": "z0qjse2h2fme672",
+      "name": "WASH & FOLD WOMEN",
+      "price": 400,
+      "unit": "PER KG",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    },
+    {
+      "id": "axk1b563s91iqin",
+      "name": "WASH & FOLD WOMEN - WHITE",
+      "price": 450,
+      "unit": "PER KG",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    },
+    {
+      "id": "1c9vtetkts24tpn",
+      "name": "WASH & IRON - COMFORTNER KING SIZE",
+      "price": 750,
+      "unit": "PER PIECE",
+      "serviceTypeId": "hnqy2x3j73qguep"
+    },
+    {
+      "id": "ndkcw43f4euyzoo",
+      "name": "WASH & IRON - COMFORTNER QUEEN SIZE",
+      "price": 550,
+      "unit": "PER PIECE",
+      "serviceTypeId": "hnqy2x3j73qguep"
+    },
+    {
+      "id": "fmuba4gm0g88a5p",
+      "name": "WASH & IRON - DOOR CURTAIN",
+      "price": 350,
+      "unit": "PER PIECE",
+      "serviceTypeId": "hnqy2x3j73qguep"
+    },
+    {
+      "id": "8w0853h61vagia3",
+      "name": "WASH & IRON - MEN",
+      "price": 300,
+      "unit": "PER KG",
+      "serviceTypeId": "hnqy2x3j73qguep"
+    },
+    {
+      "id": "r4c9qno4z9t5lah",
+      "name": "WASH & IRON - MEN WHITE",
+      "price": 350,
+      "unit": "PER KG",
+      "serviceTypeId": "hnqy2x3j73qguep"
+    },
+    {
+      "id": "kxcppg145jzv55w",
+      "name": "WASH & IRON - TOWEL",
+      "price": 30,
+      "unit": "PER PIECE",
+      "serviceTypeId": "hnqy2x3j73qguep"
+    },
+    {
+      "id": "cgwfmav97mklbm4",
+      "name": "WASH & IRON - WOMEN",
+      "price": 450,
+      "unit": "PER KG",
+      "serviceTypeId": "hnqy2x3j73qguep"
+    },
+    {
+      "id": "3u4r0gizgzsu6aq",
+      "name": "WASH & IRON - WOMEN WHITE",
+      "price": 500,
+      "unit": "PER KG",
+      "serviceTypeId": "hnqy2x3j73qguep"
+    },
+    {
+      "id": "ydhiv63t7qcbciv",
+      "name": "WASH - COLOUR SHOE (STARTING)",
+      "price": 400,
+      "unit": "PER PAIR",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    },
+    {
+      "id": "uuee4tcn0325i8d",
+      "name": "WASH - KIDS COLOUR SHOE (STARTING)",
+      "price": 300,
+      "unit": "PER PAIR",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    },
+    {
+      "id": "3o9c6stqah4owmg",
+      "name": "WASH - KIDS WHITE SHOE (STARTING)",
+      "price": 350,
+      "unit": "PER PAIR",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    },
+    {
+      "id": "ll2xwcpro9nd6fn",
+      "name": "WASH - WHITE SHOE (STARTING)",
+      "price": 450,
+      "unit": "PER PAIR",
+      "serviceTypeId": "6wvaygtpmnkba7m"
+    }
+  ]
+}

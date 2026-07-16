@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: hsl(40 100% 97%);
+  --color-foreground: hsl(217 33% 17%);
+  --color-primary: hsl(348 83% 47%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(51 100% 50%);
+  --color-secondary-foreground: hsl(217 33% 17%);
+  --color-accent: hsl(210 100% 20%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-muted: hsl(210 20% 90%);
+  --color-muted-foreground: hsl(217 33% 47%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(217 33% 17%);
+  --color-border: hsl(51 100% 80%);
+  --color-input: hsl(40 50% 95%);
+  --color-ring: hsl(51 100% 50%);
+  --color-destructive: hsl(0 84% 60%);
+
+  --radius-lg: 0.75rem;
+  --radius-md: calc(0.75rem - 2px);
+  --radius-sm: calc(0.75rem - 4px);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: hsl(348 83% 47% / 0.2);
+}
