@@ -3,6 +3,7 @@ import { CheckCircle2, Minus, Plus, Trash2 } from "lucide-react"
 import { Button } from "@/components/Button"
 import { formatPrice, type PricingItem } from "@/data/pricing"
 import { usePricing } from "@/context/PricingContext"
+import { buildQuoteMessage, openWhatsAppQuote } from "@/lib/whatsapp"
 import { cn } from "@/lib/utils"
 
 type CartLine = {
@@ -15,7 +16,7 @@ export function Enquiry() {
   const [selectedServices, setSelectedServices] = useState<string[]>([])
   const [cart, setCart] = useState<CartLine[]>([])
   const [submitted, setSubmitted] = useState(false)
-  const [sending, setSending] = useState(false)
+  const [formError, setFormError] = useState("")
 
   const availableItems = useMemo(() => {
     return selectedServices.flatMap((id) => itemsForService(id))
@@ -57,24 +58,46 @@ export function Enquiry() {
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSending(true)
-    window.setTimeout(() => {
-      setSending(false)
-      setSubmitted(true)
-    }, 800)
+    setFormError("")
+
+    if (cart.length === 0) {
+      setFormError("Add at least one item to your quote before sending on WhatsApp.")
+      return
+    }
+
+    const data = new FormData(e.currentTarget)
+    const customer = {
+      name: String(data.get("name") || "").trim(),
+      email: String(data.get("email") || "").trim(),
+      phone: String(data.get("phone") || "").trim(),
+      address: String(data.get("address") || "").trim(),
+      notes: String(data.get("notes") || "").trim(),
+    }
+
+    const serviceNames = services
+      .filter((s) => selectedServices.includes(s.id))
+      .map((s) => s.name)
+
+    const message = buildQuoteMessage(customer, cart, serviceNames)
+    openWhatsAppQuote(message)
+    setSubmitted(true)
   }
 
   if (submitted) {
     return (
       <div className="mx-auto flex max-w-lg flex-col items-center px-4 py-24 text-center">
         <CheckCircle2 className="mb-4 h-14 w-14 text-emerald-600" />
-        <h1 className="text-3xl font-extrabold text-slate-900">Enquiry submitted!</h1>
+        <h1 className="text-3xl font-extrabold text-slate-900">Quote ready in WhatsApp</h1>
         <p className="mt-3 text-slate-600">
-          Enquiry submitted successfully! We will contact you soon.
+          WhatsApp should open with your order details. Tap <strong>Send</strong> to place the
+          order with us.
         </p>
-        <Button to="/" className="mt-8">
-          Back to Home
-        </Button>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <Button to="/" variant="outline">
+            Back to Home
+          </Button>
+          <Button onClick={() => setSubmitted(false)}>Send another quote</Button>
+        </div>
       </div>
     )
   }
@@ -90,7 +113,7 @@ export function Enquiry() {
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-slate-600 text-balance">
           Select your services to view live pricing and instantly calculate your estimated total.
-          Schedule your pickup in seconds.
+          Send the quote to us on WhatsApp in one tap.
         </p>
       </div>
 
@@ -122,26 +145,26 @@ export function Enquiry() {
             {loading && services.length === 0 ? (
               <p className="mt-4 text-sm text-slate-500">Loading your customized pricing...</p>
             ) : (
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              {services.map((service) => {
-                const active = selectedServices.includes(service.id)
-                return (
-                  <button
-                    key={service.id}
-                    type="button"
-                    onClick={() => toggleService(service.id)}
-                    className={cn(
-                      "rounded-lg border px-4 py-3 text-left text-sm font-semibold transition-all",
-                      active
-                        ? "border-primary bg-primary/5 text-primary ring-2 ring-primary/20"
-                        : "border-border bg-input text-slate-700 hover:border-primary/40",
-                    )}
-                  >
-                    {service.name}
-                  </button>
-                )
-              })}
-            </div>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                {services.map((service) => {
+                  const active = selectedServices.includes(service.id)
+                  return (
+                    <button
+                      key={service.id}
+                      type="button"
+                      onClick={() => toggleService(service.id)}
+                      className={cn(
+                        "rounded-lg border px-4 py-3 text-left text-sm font-semibold transition-all",
+                        active
+                          ? "border-primary bg-primary/5 text-primary ring-2 ring-primary/20"
+                          : "border-border bg-input text-slate-700 hover:border-primary/40",
+                      )}
+                    >
+                      {service.name}
+                    </button>
+                  )
+                })}
+              </div>
             )}
 
             {selectedServices.length > 0 && (
@@ -248,9 +271,18 @@ export function Enquiry() {
             <span className="text-2xl font-extrabold text-primary">{formatPrice(total)}</span>
           </div>
 
-          <Button type="submit" className="mt-6 w-full" size="lg" disabled={sending}>
-            {sending ? "Submitting..." : "Submit Enquiry"}
+          {formError && (
+            <p className="mt-4 rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-800">
+              {formError}
+            </p>
+          )}
+
+          <Button type="submit" className="mt-6 w-full" size="lg">
+            Send Quote on WhatsApp
           </Button>
+          <p className="mt-3 text-center text-xs text-slate-500">
+            Opens WhatsApp with your order details ready to send.
+          </p>
         </aside>
       </form>
     </div>

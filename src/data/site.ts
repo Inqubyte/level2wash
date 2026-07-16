@@ -17,7 +17,7 @@ export const site = {
   heroImage:
     "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=2071&auto=format&fit=crop",
   aboutImage:
-    "https://images.unsplash.com/photo-1639628735081-3fa6e2e5f296?q=80&w=2070&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?q=80&w=2070&auto=format&fit=crop",
   contactImage:
     "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=2070&auto=format&fit=crop",
   garmentsPerMonth: "10,000+",
