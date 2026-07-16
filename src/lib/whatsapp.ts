@@ -63,8 +63,34 @@ export function buildQuoteMessage(
   return parts.filter((p) => p != null).join("\n")
 }
 
-export function openWhatsAppQuote(message: string, phone = site.whatsapp) {
+export function buildContactMessage(contact: {
+  name: string
+  phone: string
+  email: string
+  message: string
+}) {
+  return [
+    `*New message — ${site.shortBrand}*`,
+    "",
+    "*Contact*",
+    `Name: ${contact.name}`,
+    `Phone: ${contact.phone}`,
+    `Email: ${contact.email}`,
+    "",
+    "*Message*",
+    contact.message,
+    "",
+    "_Sent from level2wash.com Contact form_",
+  ].join("\n")
+}
+
+export function openWhatsAppMessage(message: string, phone = site.whatsapp) {
   const url = `https://wa.me/${whatsappNumber(phone)}?text=${encodeURIComponent(message)}`
   window.open(url, "_blank", "noopener,noreferrer")
   return url
+}
+
+/** @deprecated alias — prefer openWhatsAppMessage */
+export function openWhatsAppQuote(message: string, phone = site.whatsapp) {
+  return openWhatsAppMessage(message, phone)
 }

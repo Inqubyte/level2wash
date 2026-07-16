@@ -3,7 +3,7 @@ import { CheckCircle2, Minus, Plus, Trash2 } from "lucide-react"
 import { Button } from "@/components/Button"
 import { formatPrice, type PricingItem } from "@/data/pricing"
 import { usePricing } from "@/context/PricingContext"
-import { buildQuoteMessage, openWhatsAppQuote } from "@/lib/whatsapp"
+import { buildQuoteMessage, openWhatsAppMessage } from "@/lib/whatsapp"
 import { cn } from "@/lib/utils"
 
 type CartLine = {
@@ -79,7 +79,7 @@ export function Enquiry() {
       .map((s) => s.name)
 
     const message = buildQuoteMessage(customer, cart, serviceNames)
-    openWhatsAppQuote(message)
+    openWhatsAppMessage(message)
     setSubmitted(true)
   }
 
