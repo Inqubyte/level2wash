@@ -13,7 +13,8 @@ export const site = {
   address:
     "Plot No 234, HUDA Layout, Nallagandala, Hyderabad – 500019, Opposite to Citizens Hospital",
   city: "Hyderabad, Telangana, India",
-  logo: "/logo.png",
+  // BASE_URL is `/level2wash/` on GitHub Pages (see vite.config base)
+  logo: `${import.meta.env.BASE_URL}logo.png`,
   heroImage:
     "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=2071&auto=format&fit=crop",
   aboutImage:
