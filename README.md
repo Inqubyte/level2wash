@@ -38,22 +38,31 @@ For GitHub Pages, add the same `VITE_GOOGLE_SHEET_*` values as repository Action
 
 ## GitHub Pages
 
-Site URL: **https://inqubyte.github.io/level2wash/**
+Site URL: **https://level2wash.com** (also `https://inqubyte.github.io/level2wash/`)
 
-- Vite `base` is `/level2wash/`
-- Routing uses `HashRouter` (URLs like `/level2wash/#/pricing`)
+- Vite `base` is `/` (custom domain at site root)
+- `public/CNAME` → `level2wash.com`
+- Routing uses `HashRouter` (URLs like `/#/pricing`)
 - Deploy workflow: `.github/workflows/deploy-pages.yml` (builds on every push to `main`)
 
-### One-time setup
+### Custom domain DNS (apex)
 
-1. Push this repo to `Inqubyte/level2wash` (including the workflow file).
-2. On GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Optional: **Settings → Secrets and variables → Actions → Variables**  
-   - `VITE_GOOGLE_SHEET_ID`  
-   - `VITE_GOOGLE_SHEET_GID`  
-   (defaults are already baked into the app if unset)
-4. If the repo is **private**, Pages may require a paid GitHub plan — make the repo **public** for free hosting.
-5. Open the Actions tab, wait for **Deploy to GitHub Pages** to finish, then visit the site URL.
+At your domain registrar for `level2wash.com`:
+
+| Type | Name | Value |
+|---|---|---|
+| `A` | `@` | `185.199.108.153` |
+| `A` | `@` | `185.199.109.153` |
+| `A` | `@` | `185.199.110.153` |
+| `A` | `@` | `185.199.111.153` |
+| `AAAA` | `@` | `2606:50c0:8000::153` |
+| `AAAA` | `@` | `2606:50c0:8001::153` |
+| `AAAA` | `@` | `2606:50c0:8002::153` |
+| `AAAA` | `@` | `2606:50c0:8003::153` |
+
+Optional `www` → CNAME to `inqubyte.github.io`, then add `www.level2wash.com` in Pages settings too.
+
+On GitHub: **Settings → Pages → Custom domain** → `level2wash.com` → Save → enable **Enforce HTTPS** after DNS propagates.
 
 ## Pages
 
