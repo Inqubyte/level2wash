@@ -72,7 +72,6 @@ On GitHub: **Settings → Pages → Custom domain** → `level2wash.com` → Sav
 - `/about` — Story & values
 - `/contact` — Contact form + WhatsApp / phone
 - `/enquiry` — Book pickup & quote calculator
-- `/login`, `/signup` — Auth UI (front-end only)
 
 ## Stack
 

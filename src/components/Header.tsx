@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, NavLink, useLocation } from "react-router-dom"
-import { Menu, X, User } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { navLinks, site } from "@/data/site"
 import { Button } from "@/components/Button"
 import { cn } from "@/lib/utils"
@@ -68,10 +68,6 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
-          <Button to="/login" variant="ghost" size="sm" className="gap-1.5">
-            <User className="h-4 w-4" />
-            Login
-          </Button>
           <Button to="/enquiry" size="sm">
             Book Now
           </Button>
@@ -107,10 +103,7 @@ export function Header() {
                 {link.label}
               </NavLink>
             ))}
-            <div className="mt-2 flex flex-col gap-2 border-t border-border pt-3">
-              <Button to="/login" variant="outline" className="w-full">
-                Login
-              </Button>
+            <div className="mt-2 border-t border-border pt-3">
               <Button to="/enquiry" className="w-full">
                 Book Now
               </Button>
