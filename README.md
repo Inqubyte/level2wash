@@ -38,16 +38,22 @@ For GitHub Pages, add the same `VITE_GOOGLE_SHEET_*` values as repository Action
 
 ## GitHub Pages
 
-Configured for project hosting at `https://<user>.github.io/Level2Wash/`:
+Site URL: **https://inqubyte.github.io/level2wash/**
 
-- Vite `base` is `/Level2Wash/`
-- Routing uses `HashRouter` (URLs look like `/Level2Wash/#/pricing`)
+- Vite `base` is `/level2wash/`
+- Routing uses `HashRouter` (URLs like `/level2wash/#/pricing`)
+- Deploy workflow: `.github/workflows/deploy-pages.yml` (builds on every push to `main`)
 
-```bash
-npm run build
-```
+### One-time setup
 
-Deploy the `dist/` folder to the `gh-pages` branch (or use a Pages workflow that publishes `dist`).
+1. Push this repo to `Inqubyte/level2wash` (including the workflow file).
+2. On GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. Optional: **Settings → Secrets and variables → Actions → Variables**  
+   - `VITE_GOOGLE_SHEET_ID`  
+   - `VITE_GOOGLE_SHEET_GID`  
+   (defaults are already baked into the app if unset)
+4. If the repo is **private**, Pages may require a paid GitHub plan — make the repo **public** for free hosting.
+5. Open the Actions tab, wait for **Deploy to GitHub Pages** to finish, then visit the site URL.
 
 ## Pages
 

@@ -13,7 +13,9 @@ const sheetsProxy = {
 }
 
 export default defineConfig({
-  base: '/Level2Wash/',
+  // Must match the GitHub repo name for project Pages:
+  // https://inqubyte.github.io/level2wash/
+  base: '/level2wash/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
