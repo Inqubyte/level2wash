@@ -18,8 +18,9 @@ export const site = {
     "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=2071&auto=format&fit=crop",
   aboutImage:
     "https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?q=80&w=2070&auto=format&fit=crop",
-  contactImage:
-    "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=2070&auto=format&fit=crop",
+  mapsUrl: "https://maps.app.goo.gl/bQQVMmPLWiUL12nU8",
+  mapsEmbedUrl:
+    "https://www.google.com/maps?q=17.4701232,78.3077586&hl=en&z=16&output=embed",
   garmentsPerMonth: "10,000+",
 } as const
 

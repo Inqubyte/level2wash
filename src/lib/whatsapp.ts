@@ -8,7 +8,6 @@ export type QuoteLine = {
 
 export type QuoteCustomer = {
   name: string
-  email: string
   phone: string
   address: string
   notes: string
@@ -47,7 +46,6 @@ export function buildQuoteMessage(
     "*Customer*",
     `Name: ${customer.name}`,
     `Phone: ${customer.phone}`,
-    `Email: ${customer.email}`,
     customer.address ? `Address: ${customer.address}` : null,
     "",
     serviceNames.length ? `*Services:* ${serviceNames.join(", ")}` : null,
@@ -66,7 +64,6 @@ export function buildQuoteMessage(
 export function buildContactMessage(contact: {
   name: string
   phone: string
-  email: string
   message: string
 }) {
   return [
@@ -75,7 +72,6 @@ export function buildContactMessage(contact: {
     "*Contact*",
     `Name: ${contact.name}`,
     `Phone: ${contact.phone}`,
-    `Email: ${contact.email}`,
     "",
     "*Message*",
     contact.message,

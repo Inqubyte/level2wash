@@ -18,7 +18,6 @@ export function Contact() {
     const contact = {
       name: String(data.get("name") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
-      email: String(data.get("email") || "").trim(),
       message: String(data.get("message") || "").trim(),
     }
 
@@ -64,12 +63,18 @@ export function Contact() {
           <p className="mt-3 font-semibold text-[#25D366]">Chat Now</p>
         </a>
 
-        <div className="rounded-xl border border-border/60 bg-card p-6 shadow-sm">
+        <a
+          href={site.mapsUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-xl border border-border/60 bg-card p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md"
+        >
           <MapPin className="mb-3 h-6 w-6 text-primary" />
           <h3 className="font-bold text-slate-900">Visit Us</h3>
           <p className="mt-1 text-sm font-medium text-accent">{site.shortBrand}</p>
           <p className="mt-2 text-sm leading-relaxed text-slate-600">{site.address}</p>
-        </div>
+          <p className="mt-3 text-sm font-semibold text-primary">Open in Google Maps</p>
+        </a>
       </div>
 
       <div className="grid gap-10 lg:grid-cols-2">
@@ -101,7 +106,6 @@ export function Contact() {
             <form onSubmit={handleSubmit} className="mt-6 space-y-4">
               <Field label="Full Name" name="name" required />
               <Field label="Phone Number" name="phone" type="tel" required />
-              <Field label="Email Address" name="email" type="email" required />
               <label className="block">
                 <span className="mb-1.5 block text-sm font-medium text-slate-700">Message</span>
                 <textarea
@@ -122,12 +126,23 @@ export function Contact() {
           )}
         </motion.div>
 
-        <div className="overflow-hidden rounded-xl shadow-lg">
-          <img
-            src={site.contactImage}
-            alt="Customer service representative"
-            className="h-full min-h-[320px] w-full object-cover"
+        <div className="overflow-hidden rounded-xl border border-border/60 shadow-lg">
+          <iframe
+            title="Durga Dry Cleaning & Laundry Services on Google Maps"
+            src={site.mapsEmbedUrl}
+            className="h-full min-h-[320px] w-full border-0 lg:min-h-full"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
           />
+          <a
+            href={site.mapsUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="block border-t border-border/60 bg-card px-4 py-3 text-center text-sm font-semibold text-primary hover:bg-secondary/20"
+          >
+            Open location in Google Maps
+          </a>
         </div>
       </div>
     </div>

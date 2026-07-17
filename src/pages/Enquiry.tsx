@@ -68,7 +68,6 @@ export function Enquiry() {
     const data = new FormData(e.currentTarget)
     const customer = {
       name: String(data.get("name") || "").trim(),
-      email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       address: String(data.get("address") || "").trim(),
       notes: String(data.get("notes") || "").trim(),
@@ -123,7 +122,6 @@ export function Enquiry() {
             <h2 className="text-lg font-bold text-slate-900">Customer Details</h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <Field label="Name *" name="name" required />
-              <Field label="Email *" name="email" type="email" required />
               <Field label="Phone *" name="phone" type="tel" required />
               <Field label="Address" name="address" placeholder="Enter pickup/delivery address" />
             </div>
