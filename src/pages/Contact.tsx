@@ -64,7 +64,7 @@ export function Contact() {
         </a>
 
         <a
-          href={site.mapsUrl}
+          href={site.mapsDirectionsUrl}
           target="_blank"
           rel="noreferrer"
           className="rounded-xl border border-border/60 bg-card p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md"
@@ -73,7 +73,7 @@ export function Contact() {
           <h3 className="font-bold text-slate-900">Visit Us</h3>
           <p className="mt-1 text-sm font-medium text-accent">{site.shortBrand}</p>
           <p className="mt-2 text-sm leading-relaxed text-slate-600">{site.address}</p>
-          <p className="mt-3 text-sm font-semibold text-primary">Open in Google Maps</p>
+          <p className="mt-3 text-sm font-semibold text-primary">Get directions</p>
         </a>
       </div>
 
@@ -127,21 +127,31 @@ export function Contact() {
         </motion.div>
 
         <div className="overflow-hidden rounded-xl border border-border/60 shadow-lg">
-          <iframe
-            title="Durga Dry Cleaning & Laundry Services on Google Maps"
-            src={site.mapsEmbedUrl}
-            className="h-full min-h-[320px] w-full border-0 lg:min-h-full"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
+          <div className="relative min-h-[320px] w-full lg:h-full">
+            <iframe
+              title="Durga Dry Cleaning & Laundry Services on Google Maps"
+              src={site.mapsEmbedUrl}
+              className="absolute inset-0 h-full w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+            {/* Captures pin/map clicks → Google Maps directions from current location */}
+            <a
+              href={site.mapsDirectionsUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="absolute inset-0 z-10"
+              aria-label="Get directions from your location in Google Maps"
+            />
+          </div>
           <a
-            href={site.mapsUrl}
+            href={site.mapsDirectionsUrl}
             target="_blank"
             rel="noreferrer"
             className="block border-t border-border/60 bg-card px-4 py-3 text-center text-sm font-semibold text-primary hover:bg-secondary/20"
           >
-            Open location in Google Maps
+            Get directions from my location
           </a>
         </div>
       </div>

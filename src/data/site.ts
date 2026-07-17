@@ -19,6 +19,8 @@ export const site = {
   aboutImage:
     "https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?q=80&w=2070&auto=format&fit=crop",
   mapsUrl: "https://maps.app.goo.gl/bQQVMmPLWiUL12nU8",
+  mapsDirectionsUrl:
+    "https://www.google.com/maps/dir/?api=1&destination=17.4701232,78.3077586&travelmode=driving",
   mapsEmbedUrl:
     "https://www.google.com/maps?q=17.4701232,78.3077586&hl=en&z=16&output=embed",
   garmentsPerMonth: "10,000+",
